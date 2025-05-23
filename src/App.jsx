@@ -2,6 +2,7 @@ import "./App.css"
 import { InstaLogo } from "./logos/instagram"
 import { TiktokLogo } from "./logos/titkok"
 import { YoutubeLogo } from "./logos/youtube"
+import { WindowsLogo } from "./logos/windows"
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <section className="logo">
           <InstaLogo />
           <YoutubeLogo />
-          <InstaLogo />
+          <WindowsLogo />
           <TiktokLogo />
           <InstaLogo />
           <InstaLogo />

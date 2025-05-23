@@ -46,3 +46,8 @@
   bottom: 0;
   margin: auto;
 }
+
+.youtube:hover {
+  filter: drop-shadow(0 0 2em #e21);
+  cursor: pointer;
+}
