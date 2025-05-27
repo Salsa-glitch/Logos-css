@@ -1,23 +1,14 @@
-import "./App.css"
+import { Routes, Route } from "react-router-dom"
+import { HomePage } from "./HomePage"
+import { EditableCSS } from "./CCC-demos/editableContent"
 import { InstaLogo } from "./logos/instagram"
-import { TiktokLogo } from "./logos/titkok"
-import { YoutubeLogo } from "./logos/youtube"
-import { WindowsLogo } from "./logos/windows"
 
 function App() {
   return (
-    <>
-      <main className="logos">
-        <section className="logo">
-          <InstaLogo />
-          <YoutubeLogo />
-          <WindowsLogo />
-          <TiktokLogo />
-          <InstaLogo />
-          <InstaLogo />
-        </section>
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/css-demo" element={<EditableCSS />} />
+    </Routes>
   )
 }
 

@@ -1,4 +1,5 @@
-.insta {
+export const logoFormats = {
+  instragram: `.instagram {
   height: 10rem;
   width: 10rem;
   background: radial-gradient(
@@ -13,8 +14,7 @@
   position: relative;
   border: 0;
 }
-
-.insta:before {
+.instagram:before {
   content: "";
   border: 10px solid #ffffff;
   border-radius: 30%;
@@ -27,8 +27,7 @@
   position: absolute;
   margin: auto;
 }
-
-.insta:after {
+.instagram:after {
   content: "";
   border: 10px solid #ffffff;
   border-radius: 100%;
@@ -55,8 +54,10 @@
   position: absolute;
   margin: auto;
 }
-
-.insta:hover {
+.instagram:hover {
   filter: drop-shadow(0 0 2em #c46ddcaa);
   cursor: pointer;
+}
+
+`,
 }

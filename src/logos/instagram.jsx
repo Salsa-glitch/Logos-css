@@ -1,11 +1,14 @@
 import "./instagram.css"
+import { Link } from "react-router-dom"
 
 export function InstaLogo() {
   return (
     <div>
-      <button className="insta">
-        <span className="instagram" />
-      </button>
+      <Link to="/css-demo">
+        <button className="insta">
+          <span className="instagramdot" />
+        </button>
+      </Link>
       <p>{`"Makes you want to snap a selfie"`}</p>
     </div>
   )

@@ -6,7 +6,7 @@ export function TiktokLogo() {
       <button className="tiktokbackground">
         <span className="tiktok" />
       </button>
-      <p className="quote">{`"Look at that anaglyph effect" `}</p>
+      <p>{`"Look at that anaglyph effect" `}</p>
     </div>
   )
 }

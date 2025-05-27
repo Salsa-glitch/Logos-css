@@ -1,37 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #242424;
-}
-
-.container {
+.split-image-container {
   position: relative;
   width: 10rem;
   height: 10rem;
   margin: auto;
+  background: transparent;
+  border: none;
 }
 
-.split-image-container {
-  position: relative;
-  width: 9rem;
-  height: 9rem;
-  margin: auto;
+.split-image-container:hover {
+  cursor: pointer;
 }
 
 .quadrant {
   position: absolute;
-  width: 50%;
-  height: 50%;
-
-  background-size: 10rem 10rem;
+  width: 5rem;
+  height: 5rem;
   transition: transform 0.3s ease;
+  margin: auto;
 }
 
 .quadrant-1 {
@@ -64,6 +49,7 @@ body {
 
 .split-image-container:hover .quadrant-1 {
   transform: translate(-5px, -5px);
+  cursor: pointer;
 }
 
 .split-image-container:hover .quadrant-2 {
