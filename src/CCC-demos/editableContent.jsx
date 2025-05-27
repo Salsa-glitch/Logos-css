@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { logoFormats } from "../constants/css-formats"
-
+import "./editable.css"
 export function EditableCSS() {
   const [cssCode, setCssCode] = useState(logoFormats.instragram)
   const styleElementId = "dynamic-style"
@@ -19,25 +19,21 @@ export function EditableCSS() {
   }, [cssCode])
 
   return (
-    <div>
-      <h2>Editable CSS</h2>
-      <button className="instagram">
-        <span className="instagramdot" />
-      </button>
+    <div className="editablecontent">
+      <div className="editablecontent" style={{ marginTop: "20px" }}>
+        {`Go ahead! modify the style (you won't break anything)`}
+      </div>
+      <div className="editablecontent">
+        <button className="instagram">
+          <span className="instagramdot" />
+        </button>
+      </div>
       <textarea
         value={cssCode}
         onChange={(e) => setCssCode(e.target.value)}
-        rows={40}
+        rows={20}
         cols={40}
-        placeholder="Type CSS here, e.g.:
-#styled-box {
-  background: lightblue;
-  padding: 20px;
-}"
       />
-      <div id="styled-box" style={{ marginTop: "20px" }}>
-        I'm a box! Style me with your CSS above.
-      </div>
     </div>
   )
 }
