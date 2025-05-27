@@ -181,7 +181,7 @@ export const logoFormats = {
 .tiktokbackground:hover {
   box-shadow: -4px -4px 0 0 #24f6f0;
   filter: drop-shadow(7px 7px 0 #fe2d52);
-  cursor: pointer;n
+  cursor: pointer;
 }
 `,
 

@@ -40,7 +40,7 @@ export function EditableInstagram() {
 
 export function EditableReact() {
   const [cssCode, setCssCode] = useState(logoFormats.react)
-  const styleElementId = "dynamic-style"
+  const styleElementId = "dynamic-style2"
 
   useEffect(() => {
     let styleEl = document.getElementById(styleElementId)
@@ -80,7 +80,7 @@ export function EditableReact() {
 
 export function EditableTiktok() {
   const [cssCode, setCssCode] = useState(logoFormats.tiktok)
-  const styleElementId = "dynamic-style"
+  const styleElementId = "dynamic-style3"
 
   useEffect(() => {
     let styleEl = document.getElementById(styleElementId)
@@ -117,7 +117,7 @@ export function EditableTiktok() {
 
 export function EditableWindows() {
   const [cssCode, setCssCode] = useState(logoFormats.windows)
-  const styleElementId = "dynamic-style"
+  const styleElementId = "dynamic-style4"
 
   useEffect(() => {
     let styleEl = document.getElementById(styleElementId)
@@ -157,7 +157,7 @@ export function EditableWindows() {
 
 export function EditableYoutube() {
   const [cssCode, setCssCode] = useState(logoFormats.youtube)
-  const styleElementId = "dynamic-style"
+  const styleElementId = "dynamic-style5"
 
   useEffect(() => {
     let styleEl = document.getElementById(styleElementId)
@@ -194,7 +194,7 @@ export function EditableYoutube() {
 
 export function EditableGoogle() {
   const [cssCode, setCssCode] = useState(logoFormats.google)
-  const styleElementId = "dynamic-style"
+  const styleElementId = "dynamic-style6"
 
   useEffect(() => {
     let styleEl = document.getElementById(styleElementId)
