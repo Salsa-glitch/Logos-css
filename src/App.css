@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  align-items: center;
 }
 
 .logos {
@@ -14,4 +15,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+}
+
+.about {
+  text-align: left;
 }

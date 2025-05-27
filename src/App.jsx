@@ -1,13 +1,52 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, NavLink } from "react-router-dom"
 import { HomePage } from "./HomePage"
-import { EditableCSS } from "./CCC-demos/editableContent"
+import { AboutPage } from "./assets/AboutPage"
+import {
+  EditableInstagram,
+  EditableTiktok,
+  EditableReact,
+  EditableWindows,
+  EditableYoutube,
+  EditableGoogle,
+} from "./CCC-demos/editableDemos"
+import { paths } from "./constants/paths"
+
+function checkIfActive({ isActive }) {
+  return isActive ? "is-active" : undefined
+}
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/css-demo" element={<EditableCSS />} />
-    </Routes>
+    <div>
+      <div className="pages">
+        <header>
+          <nav>
+            <lu>
+              <li>
+                <NavLink to="/" className={checkIfActive}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about-page" className={checkIfActive}>
+                  About
+                </NavLink>
+              </li>
+            </lu>
+          </nav>
+        </header>
+      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about-page" element={<AboutPage />} />
+        <Route path={paths.instagram} element={<EditableInstagram />} />
+        <Route path={paths.react} element={<EditableReact />} />
+        <Route path={paths.tiktok} element={<EditableTiktok />} />
+        <Route path={paths.windows} element={<EditableWindows />} />
+        <Route path={paths.youtube} element={<EditableYoutube />} />
+        <Route path={paths.google} element={<EditableGoogle />} />
+      </Routes>
+    </div>
   )
 }
 

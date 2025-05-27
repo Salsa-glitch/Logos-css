@@ -13,15 +13,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a.is-active {
+  font-weight: bold;
+  pointer-events: none;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.pages {
+  margin-bottom: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding: 16px;
 }
