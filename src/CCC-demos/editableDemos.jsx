@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { logoFormats } from "../constants/css-formats"
 import "./editable.css"
+
 export function EditableInstagram() {
   const [cssCode, setCssCode] = useState(logoFormats.instragram)
   const styleElementId = "dynamic-style"
@@ -18,6 +19,10 @@ export function EditableInstagram() {
     styleEl.innerHTML = cssCode
   }, [cssCode])
 
+  function handleCSSReset() {
+    setCssCode(logoFormats.instragram)
+  }
+
   return (
     <div className="editablecontent">
       <div className="editablecontent" style={{ marginTop: "20px" }}>
@@ -27,6 +32,9 @@ export function EditableInstagram() {
         <button className="instagram">
           <span className="instagramdot" />
         </button>
+      </div>
+      <div className="editablecontent">
+        <button onClick={handleCSSReset}>reset</button>
       </div>
       <textarea
         value={cssCode}
@@ -55,6 +63,10 @@ export function EditableReact() {
     styleEl.innerHTML = cssCode
   }, [cssCode])
 
+  function handleCSSReset() {
+    setCssCode(logoFormats.react)
+  }
+
   return (
     <div className="editablecontent">
       <div className="editablecontent" style={{ marginTop: "20px" }}>
@@ -67,6 +79,9 @@ export function EditableReact() {
           <div class="orbit orbit2" />
           <div class="orbit orbit3" />
         </button>
+      </div>
+      <div className="editablecontent">
+        <button onClick={handleCSSReset}>reset</button>
       </div>
       <textarea
         value={cssCode}
@@ -95,6 +110,10 @@ export function EditableTiktok() {
     styleEl.innerHTML = cssCode
   }, [cssCode])
 
+  function handleCSSReset() {
+    setCssCode(logoFormats.tiktok)
+  }
+
   return (
     <div className="editablecontent">
       <div className="editablecontent" style={{ marginTop: "20px" }}>
@@ -104,6 +123,9 @@ export function EditableTiktok() {
         <button className="tiktokbackground">
           <span className="tiktok" />
         </button>
+      </div>
+      <div className="editablecontent">
+        <button onClick={handleCSSReset}>reset</button>
       </div>
       <textarea
         value={cssCode}
@@ -132,6 +154,10 @@ export function EditableWindows() {
     styleEl.innerHTML = cssCode
   }, [cssCode])
 
+  function handleCSSReset() {
+    setCssCode(logoFormats.windows)
+  }
+
   return (
     <div className="editablecontent">
       <div className="editablecontent" style={{ marginTop: "20px" }}>
@@ -144,6 +170,9 @@ export function EditableWindows() {
           <div class="quadrant quadrant-3"></div>
           <div class="quadrant quadrant-4"></div>
         </button>
+      </div>
+      <div className="editablecontent">
+        <button onClick={handleCSSReset}>reset</button>
       </div>
       <textarea
         value={cssCode}
@@ -172,6 +201,10 @@ export function EditableYoutube() {
     styleEl.innerHTML = cssCode
   }, [cssCode])
 
+  function handleCSSReset() {
+    setCssCode(logoFormats.youtube)
+  }
+
   return (
     <div className="editablecontent">
       <div className="editablecontent" style={{ marginTop: "20px" }}>
@@ -181,6 +214,9 @@ export function EditableYoutube() {
         <button className="youtubespace">
           <span className="youtube" />
         </button>
+      </div>
+      <div className="editablecontent">
+        <button onClick={handleCSSReset}>reset</button>
       </div>
       <textarea
         value={cssCode}
@@ -209,6 +245,10 @@ export function EditableGoogle() {
     styleEl.innerHTML = cssCode
   }, [cssCode])
 
+  function handleCSSReset() {
+    setCssCode(logoFormats.google)
+  }
+
   return (
     <div className="editablecontent">
       <div className="editablecontent" style={{ marginTop: "20px" }}>
@@ -216,6 +256,9 @@ export function EditableGoogle() {
       </div>
       <div className="editablecontent">
         <button className="google"></button>
+      </div>
+      <div className="editablecontent">
+        <button onClick={handleCSSReset}>reset</button>
       </div>
       <textarea
         value={cssCode}
