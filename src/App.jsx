@@ -21,7 +21,7 @@ function App() {
       <div className="pages">
         <header>
           <nav>
-            <lu>
+            <ul>
               <li>
                 <NavLink to="/" className={checkIfActive}>
                   Home
@@ -32,7 +32,7 @@ function App() {
                   About
                 </NavLink>
               </li>
-            </lu>
+            </ul>
           </nav>
         </header>
       </div>

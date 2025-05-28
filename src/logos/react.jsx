@@ -8,9 +8,9 @@ export function ReactLogo() {
       <Link to={paths.react}>
         <button className="react">
           <div className="core" />
-          <div class="orbit orbit1" />
-          <div class="orbit orbit2" />
-          <div class="orbit orbit3" />
+          <div className="orbit orbit1" />
+          <div className="orbit orbit2" />
+          <div className="orbit orbit3" />
         </button>
       </Link>
       <p>"I am hooked to this framework"</p>

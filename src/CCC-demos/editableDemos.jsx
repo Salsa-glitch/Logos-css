@@ -75,9 +75,9 @@ export function EditableReact() {
       <div className="editablecontent">
         <button className="react">
           <div className="core" />
-          <div class="orbit orbit1" />
-          <div class="orbit orbit2" />
-          <div class="orbit orbit3" />
+          <div className="orbit orbit1" />
+          <div className="orbit orbit2" />
+          <div className="orbit orbit3" />
         </button>
       </div>
       <div className="editablecontent">
@@ -164,11 +164,11 @@ export function EditableWindows() {
         {`Go ahead! modify the style (you won't break anything)`}
       </div>
       <div className="editablecontent">
-        <button class="split-image-container">
-          <div class="quadrant quadrant-1"></div>
-          <div class="quadrant quadrant-2"></div>
-          <div class="quadrant quadrant-3"></div>
-          <div class="quadrant quadrant-4"></div>
+        <button className="split-image-container">
+          <div className="quadrant quadrant-1"></div>
+          <div className="quadrant quadrant-2"></div>
+          <div className="quadrant quadrant-3"></div>
+          <div className="quadrant quadrant-4"></div>
         </button>
       </div>
       <div className="editablecontent">
